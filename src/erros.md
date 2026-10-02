@@ -1,0 +1,3 @@
+Erro encontrado,Causa,Solução
+Sombreamento de variáveis no construtor,"Os parâmetros têm o mesmo nome dos atributos (nome = nome;), fazendo com que o Java atribua a variável a ela mesma e os atributos da classe continuem não inicializados (null e 0.0).",Usar a palavra-chave this (this.nome = nome; e this.salario = salario;) para referenciar explicitamente os atributos do objeto.
+Soma direta em vez de percentual,A instrução salario = salario + percentual; soma um valor fixo em reais (ex: 10 reais) em vez de aplicar uma porcentagem sobre o salário atual.,"Alterar o cálculo para this.salario += este.salario * (percentual / 100);, garantindo a aplicação do percentual correto."
